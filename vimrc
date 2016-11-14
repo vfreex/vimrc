@@ -219,7 +219,7 @@ nnoremap <leader>gt :YcmCompleter GetType<CR>
 " Config YCM-Generator 
 """"""""""""""""""""""
 " Generate .ycm_extra_conf.py
-nnoremap <leader>gy :YcmCompleter YcmGenerateConfig<CR>
+nnoremap <leader>gy :YcmGenerateConfig<CR>
 
 """"""""""""""""""""""
 " Config lightline
