@@ -127,8 +127,8 @@ if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
 endif
 
-" Add a bit extra margin to the left
-set foldcolumn=1
+" Remove extra margin on the left
+set foldcolumn=0
 
 """"""""""""""""""""""""""""""
 " => Status line
