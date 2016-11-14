@@ -84,6 +84,16 @@ else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
+" Use spaces instead of tabs
+set expandtab
+
+" Be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
 "Always show current position
 set ruler
 
@@ -129,6 +139,8 @@ endif
 
 " Remove extra margin on the left
 set foldcolumn=0
+" Add a bit extra margin to the left
+" set foldcolumn=1
 
 """"""""""""""""""""""""""""""
 " => Status line
