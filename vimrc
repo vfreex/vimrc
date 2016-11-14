@@ -238,4 +238,4 @@ map <C-n> :NERDTreeToggle<CR>
 """""""""""""""""""""
 " Config cscope-maps
 """"""""""""""""""""
-nnoremap <leader>gc !cscope -Rbq<CR>
+nnoremap <leader>gc :!cscope -Rbq<CR>
