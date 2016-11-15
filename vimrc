@@ -199,7 +199,8 @@ map <C-l> <C-W>l
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Source my vimrc file
 nnoremap <leader>sv :source $MYVIMRC<cr>
-
+" Generate ctags
+nnoremap <leader>gt :!ctags -R<cr>
 
 """"""""""""""""""""""
 " Config YouCompleteMe
@@ -213,7 +214,7 @@ nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>jq :YcmCompleter GoToDeclaration<CR> 
 nnoremap <leader>jr :YcmCompleter GoToReferences<CR> 
 nnoremap <leader>ji :YcmCompleter GoToInclude<CR> 
-nnoremap <leader>gt :YcmCompleter GetType<CR> 
+nnoremap <leader>tt :YcmCompleter GetType<CR> 
 
 """"""""""""""""""""""
 " Config YCM-Generator 
@@ -239,3 +240,4 @@ map <C-n> :NERDTreeToggle<CR>
 " Config cscope-maps
 """"""""""""""""""""
 nnoremap <leader>gc :!cscope -Rbq<CR>
+
