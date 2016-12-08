@@ -62,12 +62,12 @@ The leader key is <kbd>,</kbd> by default.
 # Completion and Symbol Navigation
 <leader>gy      generate .ycm_extra_conf.py for YouCompleteMe completion
 <leader>gt      generate ctags file for Vim builtin completion and symbol navigation
-<leader>gc      generate cscope.out file for scope symbol navigation
+<leader>gc      generate cscope.out file for cscope symbol navigation
 <leader>jd      jump to defination (YouCompleteMe)
 C+]             jump to defination (ctags)
 <leader>ji      jump to include (YouCompleteMe)
 <leader>jr      jump to references (YouCompleteMe)
-C+\,c           jump to references (cscope)
+C+\c           jump to references (cscope)
 C+o             jump back
 C+i             jump forward
 <leader>tt      show type of the symbol (YouCompleteMe)
