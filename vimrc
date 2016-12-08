@@ -47,9 +47,6 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""
-" highlight the background in a subtle red for text that goes over the 80 column limit
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
 " Sets how many lines of history VIM has to remember
 set history=500
 " With a map leader it's possible to do extra key combinations
@@ -259,6 +256,13 @@ nnoremap <leader>gt :!ctags -R<CR><CR>
 
 """""""""""""""""""""
 " Config cscope-maps
-""""""""""""""""""""
+"""""""""""""""""""""
 nnoremap <leader>gc :!cscope -Rbq<CR>:cs add cscope.out<CR>:cs reset<CR>
+
+""""""""""""""""""""
+" Misc
+""""""""""""""""""""
+" highlight the background in a subtle red for text that goes over the 80 column limit
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
