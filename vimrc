@@ -248,6 +248,15 @@ let g:lightline = {
 " open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
+""""""""""""""""""""
+" Config ctags
+""""""""""""""""""""
+" Tell vim to locate the 'tags' file. It first looks at the current directory,
+" then the parent directory, then the parent of the parent, and so on. 
+" The leading "./" tells Vim to use the directory of the current file rather
+" than Vim's working directory.
+set tags=./tags;
+
 """""""""""""""""""""
 " Config cscope-maps
 """"""""""""""""""""
