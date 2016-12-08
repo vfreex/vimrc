@@ -67,7 +67,7 @@ The leader key is <kbd>,</kbd> by default.
 C+]             jump to defination (ctags)
 <leader>ji      jump to include (YouCompleteMe)
 <leader>jr      jump to references (YouCompleteMe)
-C+\+c           jump to references (cscope)
+C+\,c           jump to references (cscope)
 C+o             jump back
 C+i             jump forward
 <leader>tt      show type of the symbol (YouCompleteMe)
@@ -78,11 +78,19 @@ C+p             force Vim builtin completion
 C+n             toggle NERDTree.
 C+p             start ctrlp fuzzy file finder.
 
+# Tabs
+<leader>tn          open a new tab
+<leader>te          open a file in a new tab
+<leader>tc          close current tab
+<leader>t<leader>   switch to the next tab
+
 # Misc
 :W              save your file using `sudo`
+:cd             change to the directory of current file
 <leader>pp      toggle PASTE mode
-<leader>ss      toggle spell checker
-
+<leader>ss      toggle spell checker (use 'z=' to correct your word)
+<leader><cr>    disable highlight
+<leader>sv      reload (source) your vimrc
 ```
 
 
