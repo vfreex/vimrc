@@ -211,9 +211,6 @@ map <C-l> <C-W>l
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Source my vimrc file
 nnoremap <leader>sv :source $MYVIMRC<cr>
-" Generate ctags
-nnoremap <leader>gt :!ctags -R<cr>
-
 """"""""""""""""""""""
 " Config YouCompleteMe
 """"""""""""""""""""""
@@ -256,9 +253,12 @@ map <C-n> :NERDTreeToggle<CR>
 " The leading "./" tells Vim to use the directory of the current file rather
 " than Vim's working directory.
 set tags=./tags;
+" Generate ctags
+nnoremap <leader>gt :!ctags -R<CR><CR>
+
 
 """""""""""""""""""""
 " Config cscope-maps
 """"""""""""""""""""
-nnoremap <leader>gc :!cscope -Rbq<CR>
+nnoremap <leader>gc :!cscope -Rbq<CR>:cs add cscope.out<CR>:cs reset<CR>
 
