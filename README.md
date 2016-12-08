@@ -16,7 +16,7 @@ This is my vimrc inspired from the basic version of
   + [lightline.vim][7] - A light and configurable statusline/tabline for Vim.
   + [ctrlp.vim][8] - Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 
-## Usage
+## Installation
 
 - Clone from GitHub:
 
@@ -46,6 +46,45 @@ $ vim
 - Install YouCompleteMe
 
 YouCompleteMe requires additional steps to install. Please follow [this guide][9].
+
+## Cheat Sheet
+
+There are some key mappings defined in `~/.vim/vimrc`.
+For the complete list of defined key mappings, you should read that file.
+
+Following is a cheat sheet for programmers who uses this vimrc file.
+It doesn't mean that the key mappings listed here are all defined in my vimrc.
+(Some of them are defined by corresponding plugins while some of them are builtins.)
+
+The leader key is <kbd>,</kbd> by default.
+
+```
+# Completion and Symbol Navigation
+<leader>gy      generate .ycm_extra_conf.py for YouCompleteMe completion
+<leader>gt      generate ctags file for Vim builtin completion and symbol navigation
+<leader>gc      generate cscope.out file for scope symbol navigation
+<leader>jd      jump to defination (YouCompleteMe)
+C+]             jump to defination (ctags)
+<leader>ji      jump to include (YouCompleteMe)
+<leader>jr      jump to references (YouCompleteMe)
+C+\+c           jump to references (cscope)
+C+o             jump back
+C+i             jump forward
+<leader>tt      show type of the symbol (YouCompleteMe)
+C+<Space>       (INSERT mode) force YouCompleteMe completion (even symbols from other projects)
+C+p             force Vim builtin completion
+
+# NERDTree and ctrlp
+C+n             toggle NERDTree.
+C+p             start ctrlp fuzzy file finder.
+
+# Misc
+:W              save your file using `sudo`
+<leader>pp      toggle PASTE mode
+<leader>ss      toggle spell checker
+
+```
+
 
 [1]: https://github.com/amix/vimrc
 [2]: https://github.com/VundleVim/Vundle.vim
