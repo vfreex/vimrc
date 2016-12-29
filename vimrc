@@ -1,6 +1,9 @@
 " Rayson's VIMRC
 " Based on https://github.com/amix/vimrc
 
+" Use Bash shell
+set shell=bash
+
 " To avoid duplicate scope database error
 set nocscopeverbose
 
